@@ -2,7 +2,6 @@ import turtle
 import random
 from random import randint
 import playsound
-#import pygame
 # main function
 def sub():
 	
@@ -21,31 +20,17 @@ def sub():
 	t.begin_fill()
 	t.lt(90)
 	t.fd(100)
-	t.rt(15)
-	t.fd(15)
-	t.rt(15)
-	t.fd(15)
-	t.rt(15)
-	t.fd(15)
-	t.rt(15)
-	t.fd(15)
-	t.rt(15)
-	t.fd(15)
-	t.rt(15)
-	t.fd(15)
+	for i in range(6):
+		t.rt(15)
+		t.fd(15)
 	
 	t.rt(90)
 	t.fd(30)
-	
 	t.rt(90)
-	t.lt(18)
-	t.fd(15)
-	t.lt(18)
-	t.fd(15)
-	t.lt(18)
-	t.fd(15)
-	t.lt(18)
-	t.fd(15)
+	
+	for i in range(4):
+		t.lt(18)
+		t.fd(15)
 	t.lt(18)
 	t.fd(80)
 	t.end_fill()
@@ -69,52 +54,14 @@ def sub():
 	t.lt(90)
 	t.begin_fill()
 	t.fd(250)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
+	for i in range(11):
+		t.lt(15)
+		t.fd(30)
 	t.lt(15)
 	t.fd(500)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
-	t.lt(15)
-	t.fd(30)
+	for i in range(11):
+		t.lt(15)
+		t.fd(30)
 	t.lt(15)
 	t.fd(250)
 	t.end_fill()
@@ -412,7 +359,6 @@ def sub():
 	t.rt(90)
 	
 	
-	
 def music():
 	t.penup()
 	t.pencolor("#000000")
@@ -444,8 +390,5 @@ if __name__ == "__main__":
 	for i in range(50):
 		music()
 	playsound.playsound("The Beatles - Yellow Submarine.mp3")
-	#pygame.mixer.init()
-	#pygame.mixer.music.load('The Beatles - Yellow Submarine.mp3')
-	#pygame.mixer.music.play()
 	screen.exitonclick()
 	
