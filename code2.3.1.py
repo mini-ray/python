@@ -1,5 +1,0 @@
-x = float(input("Enter a number: "))
-y = float(input("Enter a number: "))
-a = int(x / y)
-b = int(x % y)
-print("Quotient = "+str(a)+" Remainder = "+str(b))
